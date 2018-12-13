@@ -73,32 +73,31 @@ So the above mockup is my idea on how I am going to split this up into separate 
 
 I think I will have a search bar component at the top of the screen. This search bar is going to show some text input. A user can type in the search bar and this will update my state and then anytime a user hits the enter key, that will trigger a form submit event and send that search term back up to some other app component or parent component which will then take that search term and do an actual API request.
 
-On the right hand side I will have a VideoList that is going to render the entire list of videos.
+On the right hand side I will have a `VideoList` that is going to render the entire list of videos.
 
-And then each of those individual parts or each of those individual boxes will be a component called VideoItem.
+And then each of those individual parts or each of those individual boxes will be a component called `VideoItem`.
 
-So if VideoItem is one particular video then all the video items will be contained by the VideoList component.
+So if `VideoItem` is one particular video then all the video items will be contained by the `VideoList` component.
 
-This explains why I have a green box around one VideoItem inside of the blue box that encompasses all the items in the VideoList component.
+This explains why I have a green box around one `VideoItem` inside of the blue box that encompasses all the items in the `VideoList` component.
 
-Finally, I will add the VideoDetail component which will be responsible for actually showing a video player that can play the actual YouTube video that has been fetched and the title and description right underneath the video.
+Finally, I will add the `VideoDetail` component which will be responsible for actually showing a video player that can play the actual YouTube video that has been fetched and the title and description right underneath the video.
 
 So these are going to be the actual videos from YouTube that will be playing in this application minus the commercials.
 
 I need to figure out how I am going to actually show a video directly from YouTube and embed it inside my application, but I suspect this will be fairly straightforward.
 
 The last thing I want to show you below is my component hierarchy.
-![metube_components](metube_components.png)
-
-So at the top I am still going to have the overarching App component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
-
-The App is then going to configure the SearchBar, VideoDetail and VideoLists by passing props from the App down to each of these components.
-
-In turn, the VideoList component will pass some props down to the VideoItem component or the collection of video items.
-
 ![component_hierarchy](component_hierarchy.png)
-So at the top I am still going to have the overarching App component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
 
-The App is then going to configure the SearchBar, VideoDetail and VideoLists by passing props from the App down to each of these components.
+So at the top I am still going to have the overarching `App` component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
 
-In turn, the VideoList component will pass some props down to the VideoItem component or the collection of video items.
+The `App` is then going to configure the `SearchBar`, `VideoDetail` and `VideoList` by passing props from the App down to each of these components.
+
+In turn, the `VideoList` component will pass some props down to the `VideoItem` component or the collection of video items.
+
+So at the top I am still going to have the overarching `App` component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
+
+The `App` is then going to configure the `SearchBar`, `VideoDetail` and `VideoList` by passing props from the `App` down to each of these components.
+
+In turn, the `VideoList` component will pass some props down to the `VideoItem` component or the collection of video items.
