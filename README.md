@@ -65,3 +65,4 @@ going to render a list of items which are features that any React engineer worth
 able to do.
 
 ![metube_diagram](https://raw.githubusercontent.com/ldco2016/metube/37a7634d9dad34406511d685a57c5b6d24b05768/metube_diagram.png)
+![metube_diagram](metube_diagram.png)
