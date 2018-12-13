@@ -87,4 +87,18 @@ So these are going to be the actual videos from YouTube that will be playing in 
 
 I need to figure out how I am going to actually show a video directly from YouTube and embed it inside my application, but I suspect this will be fairly straightforward.
 
-The next thing I want to show you below is my component hierarchy.
+The last thing I want to show you below is my component hierarchy.
+![metube_components](metube_components.png)
+
+So at the top I am still going to have the overarching App component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
+
+The App is then going to configure the SearchBar, VideoDetail and VideoLists by passing props from the App down to each of these components.
+
+In turn, the VideoList component will pass some props down to the VideoItem component or the collection of video items.
+
+![component_hierarchy](component_hierarchy.png)
+So at the top I am still going to have the overarching App component which is responsible for holding all the state of this application, for retrieving a list of videos and for storing whatever the current search term is.
+
+The App is then going to configure the SearchBar, VideoDetail and VideoLists by passing props from the App down to each of these components.
+
+In turn, the VideoList component will pass some props down to the VideoItem component or the collection of video items.
