@@ -79,3 +79,8 @@ In turn, the `VideoList` component will pass some props down to the `VideoItem` 
 
 # Accessing the YouTube API
 ![youtube_api](youtube_api.png)
+My React app will make use of the Axios library. It is going to make a network request over to the YouTube API looking for videos related to a search term.
+
+The YouTube API is then going to respond with a list of videos to show on the screen. The list of videos will be an array of objects where every object represents a different video.
+
+In order to make use of the YouTube API I have to get an API key. To get the API key I have to navigate to console.developers.google.com inside the browser and go through a setup process.
