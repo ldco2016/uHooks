@@ -20,7 +20,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 =======
 # metube
-Headway - React Project
+uHooks - React Project
+
+Production version can be found at:
+https://u-hooks.vercel.app/
 
 # App Overview
 This is essentially going to be a YouTube browser application in code, approach and design.
